@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Viewer</title>
+  <style>
+  body, html {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  overflow: auto; 
+}
+
+.aside {
+  width: 25%;  
+  overflow-y: auto; 
+  border: 2px solid black;
+}
+
+.aside img {
+  display: block;
+  margin: 10px auto;
+  cursor: pointer;
+  width: 100%; 
+  height: auto; 
+}
+
+.main {
+  flex: 0 0 75%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgb(209, 137, 137); 
+
+}
+
+.main iframe {
+  border: none;
+  width: 90%; 
+  height: 90%;
+}
+
+
+  </style>
+</head>
+<body>
+<div class="container">
+    <div class="aside">
+        <p>Project 1-Photo cat App</p>
+        <hr>
+      <a href="https://shivamnamdev0007.github.io/Assignment/catweb.html" target="main">
+        <img src="./img/cat.jpeg" alt=" Cat Photo ">
+        <hr>
+    </a>
+      <p>Project 2-form</p>
+      <hr>
+      <a href="https://shivamnamdev0007.github.io/Assignment/form.html" target="main">
+        <img src="./img/form.jpeg" alt="Basic Form">  
+        <hr>
+      </a>
+      <p>Project 3-Iframe</p>
+      <hr>
+      <a href="https://shivamnamdev0007.github.io/Assignment/iframe.html" target="main">
+        <img src="./img/ifram.jpeg" alt="iframe use">
+        <hr>
+      </a>
+     
+    </div>
+
+    <div class="main">
+      <iframe name="main" src="https://shivamnamdev0007.github.io/Assignment/form.html" frameborder="0"></iframe>
+    </div>
+  </div>
+
+</body>
+</html>
